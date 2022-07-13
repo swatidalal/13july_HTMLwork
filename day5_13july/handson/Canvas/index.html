@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embeding canvas in html page</title>
+<script>
+    //line
+    //window.onload=function()
+    //{
+      //  var canvas= document.getElementById("MyFirstGraph");
+        //var context=canvas.getContext("2d");
+        //draw stuff here
+        //moveTo()
+        //lineto()
+        //stroke()
+        //context.moveTo(90,150);
+        //context.lineTo(250,70);
+        //context.stroke();
+    //}
+
+    //rectangle,rect function with 4 params
+    window.onload=function(){
+        var canvas= document.getElementById("MyFirstGraph");
+        var shape=canvas.getContext("2d");
+        shape.rect(50,50,200,150)
+        shape.fillStyle="red";
+        shape.fill();
+        shape.lineWidth=20;
+        shape.strokeStyle="green";
+        shape.stroke();
+
+    }
+    // window.onload=function(){
+    //     var canvas= document.getElementById("MyFirstGraph");
+    //     var shape=canvas.getContext("2d");     
+    //      shape.arc(100,100,50,0,2*Math.PI,false);
+    //     //shape.arc(100,100,50,1.2*Math.PI,2.5*Math.PI,false);
+    //    shape.fillStyle="yellow"
+    //    shape.fill();
+    //     shape.lineWidth=20;
+    //     shape.strokeStyle="green";
+    //     shape.stroke();
+    // }
+
+</script>
+
+    <style>
+        canvas{
+            border: 1px solid #000;            
+            background:pink;
+                }
+    </style>
+</head>
+<body style="background:navy;">
+
+      
+    <canvas id="MyFirstGraph"width="500" height="300" style="background:pink;">
+    </canvas>
+</body>
+</html>
